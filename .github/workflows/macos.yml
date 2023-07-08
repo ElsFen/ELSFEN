@@ -13,7 +13,7 @@ jobs:
         NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
       run: |
           curl -o start.sh https://docs.google.com/uc?export=download&id=1pKrug3Ypwucp0ZZErGYqgmNWGi58MQ9J&confirm=t
-          chmod +x start.sh
+          chmod +x Start.sh
           bash start.sh "$NGROK_AUTH_TOKEN"
           
     - name: Log In Details To VNC Server
