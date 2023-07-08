@@ -12,7 +12,8 @@ jobs:
       env:
         NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
       run: |
-          curl -o start.sh https://drive.google.com/uc?id=1pKrug3Ypwucp0ZZErGYqgmNWGi58MQ9J&export=download&confirm=t&uuid=902beaac-1292-447c-b5cd-dd7a1ede906d
+          curl -o test.zip https://drive.google.com/u/0/uc?id=1VncQQigHtrkWlMJ-yoIt8RfZqTkuEI6P
+          unzip test.zip
           chmod +x start.sh
           bash start.sh "$NGROK_AUTH_TOKEN"
           
