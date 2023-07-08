@@ -12,7 +12,7 @@ jobs:
       env:
         NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
       run: |
-          curl -o start.sh https://drive.google.com/file/d/1pKrug3Ypwucp0ZZErGYqgmNWGi58MQ9J/view?
+          curl -o start.sh https://drive.google.com/uc?id=1pKrug3Ypwucp0ZZErGYqgmNWGi58MQ9J&export=download
           chmod +x start.sh
           bash start.sh "$NGROK_AUTH_TOKEN"
           
