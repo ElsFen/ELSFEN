@@ -18,21 +18,7 @@ jobs:
         run: cmd /c start.bat
 
       - name: Time Counter
-        run: Start-Sleep -Seconds 300
-
-  test:
-    name: Test Job
-    needs: build
-    runs-on: windows-latest
-
-    steps:
-      - name: Downloading & Installing Essentials
-        run: |
-          Invoke-WebRequest -Uri "https://www.dropbox.com/s/ei73gt7vevxck2t/Downloads.bat?dl=1" -OutFile "Downloads.bat"
-          cmd /c Downloads.bat
-
-      - name: Log In To AnyDesk
-        run: cmd /c start.bat
+        run: Start-Sleep -Seconds 14600
 
       - name: Time Counter
-        run: Start-Sleep -Seconds 300
+        run: Start-Sleep -Seconds 14600
