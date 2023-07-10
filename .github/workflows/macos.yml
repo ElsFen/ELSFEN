@@ -22,4 +22,4 @@ jobs:
          bash login.sh
          
     - name: Time Counter
-      run: Start-Sleep -Seconds 14600
+      run: sleep -Seconds 14600
